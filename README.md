@@ -5,7 +5,7 @@
 - To be followed
 
 ## DOCUMENTATION:
--To be followed
+- To be followed
 
 ## CONTRIBUTORS
 - Red Joseph Sebastian (Developer)
