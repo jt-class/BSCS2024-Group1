@@ -9,16 +9,28 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void OnLoginClicked(object sender, EventArgs e)
         {
-            count++;
+            string username = UsernameEntry.Text;
+            string password = PasswordEntry.Text;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+            // Simple validation
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                await DisplayAlert("Error", "Please enter both username and password.", "OK");
+                return;
+            }
+
+            // Here, you would typically check the credentials against a database or API
+            if (username == "admin" && password == "password") // Example credentials
+            {
+                await DisplayAlert("Success", "Login successful!", "OK");
+                // Navigate to the next page or perform additional actions
+            }
             else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            {
+                await DisplayAlert("Error", "Invalid username or password. Please try again.", "OK");
+            }
         }
     }
 
