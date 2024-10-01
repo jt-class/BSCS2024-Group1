@@ -1,1 +1,1 @@
-C:\Users\redjo\source\repos\MauiApp1\MauiApp1\MauiApp1.csproj;x64
+C:\Users\redjo\Desktop\Red\Git\BSCS2024-Group1\MauiApp1\MauiApp1.csproj;x64

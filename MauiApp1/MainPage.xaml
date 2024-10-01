@@ -6,7 +6,7 @@
              Title="Welcome to eXchange"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
 
-    <ScrollView VerticalScrollBarVisibility="Auto">
+    <ScrollView VerticalScrollBarVisibility="Always">
         <VerticalStackLayout
             Padding="30,10"
             Spacing="20"
@@ -44,7 +44,6 @@
                 x:Name="CounterBtn"
                 Text="Click me for more!"
                 SemanticProperties.Hint="Press to discover more options"
-                Clicked="OnCounterClicked"
                 HorizontalOptions="FillAndExpand"
                 BackgroundColor="{DynamicResource ButtonBackgroundColor}"
                 TextColor="{DynamicResource ButtonTextColor}"
